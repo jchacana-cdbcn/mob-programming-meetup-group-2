@@ -17,4 +17,9 @@ public class CalculatorShould {
         assertEquals(4, Calculator.add("4"));
         assertEquals(100, Calculator.add("100"));
     }
+
+    @Test
+    public void return_sum_of_three_when_one_and_two() {
+        assertEquals(3, Calculator.add("1,2"));
+    }
 }
