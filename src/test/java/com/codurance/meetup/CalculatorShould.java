@@ -19,12 +19,10 @@ public class CalculatorShould {
     }
 
     @Test
-    public void return_sum_of_three_when_one_and_two() {
+    public void return_sum_when_pass_two_numbers() {
         assertEquals(3, Calculator.add("1,2"));
+        assertEquals(6, Calculator.add("3,3"));
+        assertEquals(20, Calculator.add("10,10"));
     }
 
-    @Test
-    public void return_six_when_three_and_three() {
-        assertEquals(6, Calculator.add("3,3"));
-    }
 }
