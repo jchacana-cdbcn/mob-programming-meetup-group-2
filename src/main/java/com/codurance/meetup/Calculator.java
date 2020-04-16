@@ -12,7 +12,7 @@ public class Calculator {
         if (numbers.isEmpty()) {
             return 0;
         }
-        String[] arrayNumbers = numbers.split(",");
+        String[] arrayNumbers = numbers.split(",|\n");
         return Arrays.stream(arrayNumbers)
                 .mapToInt(Integer::parseInt)
                 .sum();

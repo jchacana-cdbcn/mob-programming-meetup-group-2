@@ -25,4 +25,9 @@ public class CalculatorShould {
         assertEquals(20, Calculator.add("10,10"));
         assertEquals(45, Calculator.add("1,2,3,4,5,6,7,8,9"));
     }
+
+    @Test
+    public void return_sum_of_numbers_with_new_line_and_coma_separators() {
+        assertEquals(6, Calculator.add("1\n2,3"));
+    }
 }
