@@ -1,10 +1,8 @@
 package com.codurance.meetup;
 
-import com.sun.deploy.net.MessageHeader;
-import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CalculatorShould {
 
@@ -22,4 +20,10 @@ public class CalculatorShould {
         assertEquals(4, calculator.add("4"));
     }
 
+    @Test
+    public void return_number_when_pass_a_number() {
+
+        Calculator calculator = new Calculator();
+        assertEquals(6, calculator.add("6"));
+    }
 }
