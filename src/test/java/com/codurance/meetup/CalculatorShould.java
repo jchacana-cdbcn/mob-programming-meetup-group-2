@@ -22,4 +22,9 @@ public class CalculatorShould {
     public void return_sum_of_three_when_one_and_two() {
         assertEquals(3, Calculator.add("1,2"));
     }
+
+    @Test
+    public void return_six_when_three_and_three() {
+        assertEquals(6, Calculator.add("3,3"));
+    }
 }
