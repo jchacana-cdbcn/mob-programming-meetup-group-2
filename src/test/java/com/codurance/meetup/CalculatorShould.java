@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class CalculatorShould {
 
     @Test
-    public void return_zero_when_empty_string(){
+    public void return_zero_when_empty_string() {
 
         Calculator calculator = new Calculator();
         assertEquals(0, calculator.add(""));
