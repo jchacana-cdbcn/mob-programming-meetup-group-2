@@ -1,5 +1,7 @@
 package com.codurance.meetup;
 
+import java.util.Arrays;
+
 public class Calculator {
 
     private Calculator() {
@@ -11,7 +13,9 @@ public class Calculator {
             return 0;
         } else if (numbers.contains(",")){
             String[] arrayNumbers = numbers.split(",");
-            return Integer.parseInt(arrayNumbers[0]) + Integer.parseInt(arrayNumbers[1]);
+            return Arrays.stream(arrayNumbers)
+                    .mapToInt(Integer::parseInt)
+                    .sum();
         }
 
         return Integer.parseInt(numbers);

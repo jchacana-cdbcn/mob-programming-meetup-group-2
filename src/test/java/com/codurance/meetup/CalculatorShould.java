@@ -25,4 +25,8 @@ public class CalculatorShould {
         assertEquals(20, Calculator.add("10,10"));
     }
 
+    @Test
+    public void return_the_sum_of_given_numbers() {
+        assertEquals(45, Calculator.add("1,2,3,4,5,6,7,8,9"));
+    }
 }
