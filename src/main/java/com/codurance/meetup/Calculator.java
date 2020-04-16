@@ -2,6 +2,10 @@ package com.codurance.meetup;
 
 public class Calculator {
 
+    private Calculator() {
+
+    }
+
     public static int add(String numbers) {
         if (numbers.isEmpty()) {
             return 0;
