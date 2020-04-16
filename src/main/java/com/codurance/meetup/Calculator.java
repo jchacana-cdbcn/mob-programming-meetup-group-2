@@ -14,6 +14,10 @@ public class Calculator {
         if (numbers.isEmpty()) {
             return 0;
         }
+        return sum(numbers);
+    }
+
+    private static int sum(String numbers) {
         String[] arrayNumbers = numbers.split(SEPARATORS);
         return Arrays.stream(arrayNumbers)
                 .mapToInt(Integer::parseInt)
