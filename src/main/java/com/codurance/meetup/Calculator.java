@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Calculator {
 
+    public static final String SEPARATORS = ",|\n";
+
     private Calculator() {
 
     }
@@ -12,7 +14,7 @@ public class Calculator {
         if (numbers.isEmpty()) {
             return 0;
         }
-        String[] arrayNumbers = numbers.split(",|\n");
+        String[] arrayNumbers = numbers.split(SEPARATORS);
         return Arrays.stream(arrayNumbers)
                 .mapToInt(Integer::parseInt)
                 .sum();
